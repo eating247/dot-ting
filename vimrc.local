@@ -2,9 +2,12 @@ if has('nvim')
   set termguicolors " nvim gui colors
 endif
 
- inoremap jk <esc><CR> " get out
+inoremap jk <esc><CR> " get out
+nmap 0 ^
 
- syntax enable
- set background=dark
- colorscheme one
- set noshowmode " redundant w/ lightline
+syntax enable
+set background=dark
+colorscheme one
+set noshowmode " redundant w/ lightline
+
+let g:closetag_filenames = '*.html, *.erb, *.jsx, *.js'
