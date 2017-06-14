@@ -1,1 +1,2 @@
 Plug 'rakr/vim-one'
+Plug 'yuttie/comfortable-motion.vim'
