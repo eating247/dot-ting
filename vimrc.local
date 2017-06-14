@@ -1,0 +1,9 @@
+if has('nvim')
+  set termguicolors " nvim gui colors
+endif
+
+ inoremap jk <esc><CR>
+
+ syntax enable
+ set background=dark
+ colorscheme one
