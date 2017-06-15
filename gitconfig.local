@@ -1,0 +1,8 @@
+[user]
+  name = Tingting
+  email = ttwang.303@gmail.com
+[alias]
+  sla = log --oneline --decorate --graph -n 15
+  sb = status --short --branch
+  unstage = reset
+  uncommit = reset --soft HEAD^
