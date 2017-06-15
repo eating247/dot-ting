@@ -1,5 +1,6 @@
 📒📒📒📒📒
 
+
 ==FORMATTING==
 =       # reformat
 :noh    # turn off search highlighting 
@@ -19,5 +20,11 @@ s/old/new/g     # sub on line
 s/old/new/gc    # sub globally w/ confirmation
 
 space space    # toggle b/w tabs
+
+==MULTIPLE CURSORS==
+c-n    # visual mode, find next occurrence
+c-p    # prev occurrence
+c-x    # skip
+
 
 📒📒📒📒📒

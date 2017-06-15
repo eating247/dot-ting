@@ -4,29 +4,29 @@
 ==SESSIONS==
 tmux new -s name  # start new w/ session name
 tmux a -t name    # attach to named
-prefix d          # detach from session
-prefix L          # jump b/w sessions
+pfx d          # detach from session
+pfx L          # jump b/w sessions
 
 
 ==WINDOWS==
-prefix c      # new window
-prefix ,      # name window
-prefix f      # find window
+pfx c      # new window
+pfx ,      # name window
+pfx f      # find window
 
 
 ==PANES==
-prefix -      # horizontal split
-prefix \      # vertical split
-prefix o      # cycle through panes
-prefix q      # show pane numbers
-prefix x      # kill pane
-prefix space  # toggle b/w layouts
+pfx -      # horizontal split
+pfx \      # vertical split
+pfx o      # cycle through panes
+pfx q      # show pane numbers
+pfx x      # kill pane
+pfx space  # toggle b/w layouts
 
 
 ==NAV==
-prefix s    # see all sessions
-prefix w    # see windows
-prefix z    # break pane into window
+pfx s    # see all sessions
+pfx w    # see windows
+pfx z    # break pane into window
 
 
 📒📒📒📒📒

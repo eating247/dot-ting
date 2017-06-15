@@ -4,6 +4,10 @@ endif
 
 inoremap jk <esc><CR> " get out
 nmap 0 ^
+nmap J gT
+nmap K gt
+nnoremap <Leader>notes :Sexplore! ~/dotfiles-local/cheat/
+nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 
 syntax enable
 set background=dark
