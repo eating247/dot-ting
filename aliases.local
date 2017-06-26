@@ -1,3 +1,5 @@
+alias g="git"
 alias tmuxnotes="cat ~/dotfiles-local/cheat/tmux.md"
 alias vimnotes="cat ~/dotfiles-local/cheat/vim.md"
-alias g="git"
+alias vim=nvim
+alias mkdir="mkdir -p"

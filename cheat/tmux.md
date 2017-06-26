@@ -2,10 +2,13 @@
 
 
 ==SESSIONS==
-tmux new -s name  # start new w/ session name
-tmux a -t name    # attach to named
+tmux new -s name            # start new w/ session name
+tmux a -t name              # attach to named
+tmux kill-session -t name   # kill session
+pfx :new       # start new from w/in
 pfx d          # detach from session
 pfx L          # jump b/w sessions
+pfx s          # choose from sessions
 
 
 ==WINDOWS==
@@ -24,7 +27,6 @@ pfx space  # toggle b/w layouts
 
 
 ==NAV==
-pfx s    # see all sessions
 pfx w    # see windows
 pfx z    # break pane into window
 

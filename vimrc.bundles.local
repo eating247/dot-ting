@@ -5,4 +5,5 @@ Plug 'scrooloose/nerdtree', { 'on': 'Ntree' } " 🌲
 Plug 'itchyny/lightline.vim' " pretty statusline
 Plug 'junegunn/goyo.vim' " resizing
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'alvan/vim-closetag'
