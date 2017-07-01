@@ -1,5 +1,7 @@
 # new prefix
-set -g prefix `
+set-option -g prefix `
+# when I actually need to type backticks
+bind ` send-prefix
 
 # prefix-r for dynamic sourcing
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
@@ -8,8 +10,9 @@ bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 set-option -g status-left-length 50
 
 # info in status bar
-set-option -g status-right " P#P #(date '+%a, %b %d - %I:%M') "
-set-option -g status-left " #S "
+set-option -g status-right " PANE-#P #(date '+%a, %b %d - %I:%M') "
+# daily reminder
+set-option -g status-left " M.A.S. #S "
 
 # more intuitive split pane 
 bind-key - split-window -v -c '#{pane_current_path}'
@@ -21,3 +24,6 @@ bind -n S-Right resize-pane -R 2
 bind -n S-Down resize-pane -D 1
 bind -n S-Up resize-pane -U 1
 
+# status bar colors
+set -g status-bg '#e29587'
+set -g status-fg '#ffffff'

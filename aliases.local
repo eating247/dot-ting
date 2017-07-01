@@ -1,4 +1,5 @@
 alias g="git"
+alias gpom="git push origin master"
 alias tmuxnotes="cat ~/dotfiles-local/cheat/tmux.md"
 alias vimnotes="cat ~/dotfiles-local/cheat/vim.md"
 alias vim=nvim
