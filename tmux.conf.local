@@ -12,7 +12,7 @@ set-option -g status-left-length 50
 # info in status bar
 set-option -g status-right " PANE-#P #(date '+%a, %b %d - %I:%M') "
 # daily reminder
-set-option -g status-left " M.A.S. #S "
+set-option -g status-left " M.A.Shiiiiitt. #S "
 
 # more intuitive split pane 
 bind-key - split-window -v -c '#{pane_current_path}'
