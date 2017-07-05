@@ -2,18 +2,14 @@
 
 
 ==FORMATTING==
-=       # reformat
 :noh    # turn off search highlighting 
 
 ==MOTIONS==
-dj          # down a line
-dt)         # up to )
 d/search    # up to first match for search
 
 ==TEXT OBJECTS==
 ip, ap    # inner paragraph, a paragraph (w newline)
-i), ap    # inner parens, a parens (w parens)
-it, at    # inner tag, a tag (w tag)
+i), a)    # inner parens, a parens (w parens)
 
 s/old/new       # substitution 
 s/old/new/g     # sub on line
