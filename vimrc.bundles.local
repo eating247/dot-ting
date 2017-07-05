@@ -7,3 +7,4 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' " fuzzy finder
 Plug 'alvan/vim-closetag' " autocomplete for html tags
 Plug 'tpope/vim-surround'
+Plug 'rhysd/clever-f.vim'
