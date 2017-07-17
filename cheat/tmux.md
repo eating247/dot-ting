@@ -14,7 +14,8 @@ pfx s          # choose from sessions
 ==WINDOWS==
 pfx c      # new window
 pfx ,      # name window
-pfx f      # find window
+pfx w      # see windows
+pfx z      # break pane into window
 
 
 ==PANES==
@@ -24,11 +25,6 @@ pfx o      # cycle through panes
 pfx q      # show pane numbers
 pfx x      # kill pane
 pfx space  # toggle b/w layouts
-
-
-==NAV==
-pfx w    # see windows
-pfx z    # break pane into window
 
 
 📒📒📒📒📒

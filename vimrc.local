@@ -21,6 +21,8 @@ nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 
 syntax enable
 set background=dark
+set cursorline
+set cursorcolumn
 colorscheme one
 " set noshowmode " redundant w/ lightline
 
