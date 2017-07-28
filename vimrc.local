@@ -2,29 +2,36 @@ if has('nvim')
   set termguicolors " nvim gui colors
 endif
 
-inoremap jk <esc><CR> " get out
+colorscheme one
+" get out
+inoremap jk <esc>
 " navigate between tabs
-nmap J gT
-nmap K gt
+nnoremap J gT
+nnoremap K gt
 " nav between lines
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
+
 " move to beginning/end of line
-nnoremap B ^
-nnoremap E $
-" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
+nnoremap <C-a> ^
+nnoremap <C-e> $
 " access notes bc i'm still a n00b
 nnoremap <Leader>notes :Sexplore! ~/dotfiles-local/cheat/
 nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
+" autocomplete parentheses/brackets
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
 
-syntax enable
-set background=dark
+syntax on
+set background=light
 set cursorline
 set cursorcolumn
-colorscheme one
 " set noshowmode " redundant w/ lightline
 
 " for html autocomplete plugin
 let g:closetag_filenames = '*.html, *.erb, *.jsx, *.js'
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" Source your vimrc
+command! ReloadVimrc source $MYVIMRC
