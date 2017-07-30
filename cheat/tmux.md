@@ -14,13 +14,15 @@ pfx s          # choose from sessions
 ==WINDOWS==
 pfx c      # new window
 pfx ,      # name window
-pfx w      # see windows
+pfx w      # window list
 pfx z      # break pane into window
+pfx #      # switch to window #
+pfx p      # previous window
+pfx n      # next window
+pfx l      # last window
 
 
 ==PANES==
-pfx -      # horizontal split
-pfx \      # vertical split
 pfx o      # cycle through panes
 pfx q      # show pane numbers
 pfx x      # kill pane
