@@ -8,3 +8,4 @@ Plug 'junegunn/fzf.vim' " fuzzy finder
 Plug 'alvan/vim-closetag' " autocomplete for html tags
 Plug 'rhysd/clever-f.vim'
 Plug 'mxw/vim-jsx'
+Plug 'christoomey/vim-tmux-navigator'

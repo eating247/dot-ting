@@ -3,11 +3,14 @@ if has('nvim')
 endif
 
 colorscheme one
+
 " get out
 inoremap jk <esc>
+
 " navigate between tabs
 nnoremap J gT
 nnoremap K gt
+
 " nav between lines
 nnoremap j gj
 nnoremap k gk
@@ -15,9 +18,11 @@ nnoremap k gk
 " move to beginning/end of line
 nnoremap <C-a> ^
 nnoremap <C-e> $
+
 " access notes bc i'm still a n00b
 nnoremap <Leader>notes :Sexplore! ~/dotfiles-local/cheat/
 nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
+
 " autocomplete parentheses/brackets
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
@@ -27,7 +32,6 @@ syntax on
 set background=light
 set cursorline
 set cursorcolumn
-" set noshowmode " redundant w/ lightline
 
 " for html autocomplete plugin
 let g:closetag_filenames = '*.html, *.erb, *.jsx, *.js'
