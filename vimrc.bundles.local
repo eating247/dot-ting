@@ -2,7 +2,7 @@ Plug 'rakr/vim-one' " colorscheme
 Plug 'yuttie/comfortable-motion.vim' " smooth scrolling
 Plug 'terryma/vim-multiple-cursors' " multiple selection
 Plug 'scrooloose/nerdtree', { 'on': 'Ntree' } " 🌲
-Plug 'itchyny/lightline.vim' " pretty statusline
+Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim' " fuzzy finder
 Plug 'alvan/vim-closetag' " autocomplete for html tags

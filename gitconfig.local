@@ -6,3 +6,5 @@
   sb = status --short --branch
   unstage = reset
   uncommit = reset --soft HEAD^
+[core]
+  editor = nvim

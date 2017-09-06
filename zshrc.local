@@ -2,5 +2,6 @@
 autoload -U promptinit; promptinit
 prompt pure
 
-# syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# neovim
+export VISUAL=nvim
+export EDITOR="$VISUAL"
