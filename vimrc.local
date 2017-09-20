@@ -1,18 +1,18 @@
-if has('nvim')
-  set termguicolors " nvim gui colors
-endif
-
 colorscheme one
 set mouse=a
+syntax on
+set background=light
+set cursorline
+set cursorcolumn
 
 " get out
 inoremap jk <esc>
 
-" navigate between tabs
+" nav between tabs
 nnoremap J gT
 nnoremap K gt
 
-" nav between lines
+" smoother nav between lines
 nnoremap j gj
 nnoremap k gk
 
@@ -20,7 +20,6 @@ nnoremap k gk
 nnoremap <C-a> ^
 nnoremap <C-e> $
 
-" access notes bc i'm still a n00b
 nnoremap <Leader>notes :Sexplore! ~/dotfiles-local/cheat/
 nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 
@@ -28,6 +27,8 @@ nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
 
 " fuzzyfinder
 nnoremap <C-P> :FZF<CR>
@@ -43,39 +44,34 @@ tnoremap <C-l> <C-\><C-n><C-w>l
 tnoremap kj <C-\><C-n>
 tnoremap <C-d> <C-\><C-n>:bd!<CR>
 
-syntax on
-set background=light
-set cursorline
-set cursorcolumn
-
-let g:ale_linters = {
-      \ 'javascript': ['standard'],
-      \ 'css': ['stylelint'],
-      \ 'scss': ['stylelint'],
-      \ 'ruby': ['rubocop', 'reek']
-      \ }
-
-let g:ale_statusline_format = ['✕ %d', '△ %d', '=_=']
-let g:ale_sign_warning = '△'
-let g:ale_sign_error = '✕'
-let g:ale_echo_msg_error_str = 'Error'
-let g:ale_echo_msg_warning_str = 'Warning'
-let g:ale_echo_msg_format = '[%linter%] %s'
-
 set wildignore+=tmp/** " Ignore stuff that can't be opened
 set wildmenu " Enables a menu at the bottom of the vim window.
 set wildmode=list:longest,list:full
 
 nnoremap <C-b> :wa<CR>:Buffers<CR>
 
-augroup colorChange
-  au InsertEnter * hi Normal guibg=#DCDDDD
-  au InsertLeave * hi Normal guibg=#ffffff
-augroup END
+" numbers
+set number relativenumber
+set numberwidth=5
 
-" for html autocomplete plugin
+" html autocomplete plugin
 let g:closetag_filenames = '*.html, *.erb, *.jsx, *.js'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" ale
+let g:ale_fixers = {
+      \ 'javascript': ['prettier-standard']
+      \ }
+
+let g:ale_set_quickfix = 0
+let g:ale_statusline_format = ['✕ %d', '△ %d', '=_=']
+let g:ale_sign_warning = '△'
+let g:ale_sign_error = '✕'
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_warning_str = 'Warning'
+let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 
 " Source your vimrc
 command! ReloadVimrc source $MYVIMRC

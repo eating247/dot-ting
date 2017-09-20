@@ -10,8 +10,6 @@ bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 # WINDOWS
 # new window 
 bind c new-window -c "#{pane_current_path}"
-# start numbering at 1
-set -g base-index 1
 # renumber windows as they're created/destroyed
 set -g renumber-windows on
 # break pane out to new window
