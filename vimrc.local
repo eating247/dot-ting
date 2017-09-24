@@ -4,6 +4,7 @@ syntax on
 set background=light
 set cursorline
 set cursorcolumn
+set clipboard=unnamed
 
 " get out
 inoremap jk <esc>
@@ -59,8 +60,15 @@ let g:closetag_filenames = '*.html, *.erb, *.jsx, *.js'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " ale
+let g:ale_linters = {
+      \ 'javascript': ['prettier-standard', 'standard'],
+      \ 'css': ['stylelint'],
+      \ 'scss': ['stylelint'],
+      \ 'ruby': ['rubocop', 'reek']
+      \ }
+
 let g:ale_fixers = {
-      \ 'javascript': ['prettier-standard']
+      \ 'javascript': ['prettier']
       \ }
 
 let g:ale_set_quickfix = 0
