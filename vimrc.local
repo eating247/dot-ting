@@ -22,7 +22,6 @@ nnoremap <C-a> ^
 nnoremap <C-e> $
 
 nnoremap <Leader>notes :Sexplore! ~/dotfiles-local/cheat/
-nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 
 " autocomplete parentheses/brackets
 inoremap ( ()<Esc>i
