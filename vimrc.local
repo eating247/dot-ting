@@ -5,6 +5,9 @@ set background=light
 set cursorline
 set cursorcolumn
 set clipboard=unnamed
+set foldmethod=expr
+set nofoldenable " Leave open all folds"
+set foldexpr=getline(v:lnum)=~'^\\s*$'&&getline(v:lnum+1)=~'\\S'?'<1':1
 
 " get out
 inoremap jk <esc>
@@ -17,10 +20,6 @@ nnoremap K gt
 nnoremap j gj
 nnoremap k gk
 
-" move to beginning/end of line
-nnoremap <C-a> ^
-nnoremap <C-e> $
-
 nnoremap <Leader>notes :Sexplore! ~/dotfiles-local/cheat/
 nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 
@@ -28,7 +27,7 @@ nnoremap <Leader>vimnotes :vsplit ~/dotfiles-local/cheat/vim.md
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
-inoremap ' ''<Esc>i
+" inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 
 " fuzzyfinder
@@ -51,7 +50,7 @@ set wildmode=list:longest,list:full
 
 nnoremap <C-b> :wa<CR>:Buffers<CR>
 
-" numbers
+" line numbers
 set number relativenumber
 set numberwidth=5
 
@@ -81,5 +80,5 @@ let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 
-" Source your vimrc
+" Source vimrc
 command! ReloadVimrc source $MYVIMRC
