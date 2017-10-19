@@ -6,5 +6,7 @@
   sb = status --short --branch
   unstage = reset
   uncommit = reset --soft HEAD^
+  amend = commit --amend
+  au = add --intent-to-add
 [core]
   editor = nvim
