@@ -1,5 +1,7 @@
 alias gpom="git push origin master"
 alias tmuxnotes="cat ~/dotfiles-local/cheat/tmux.md"
 alias vimnotes="cat ~/dotfiles-local/cheat/vim.md"
-alias vim=nvim
 alias db="cd ~/dynamodb; java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
+alias dot="cd ~/dotfiles-local"
+alias rup = "!git checkout release/37 && git pull && git checkout -"
+alias issues = "open https://github.com/woodmont/spreeworks/issues"
