@@ -47,7 +47,8 @@ set wildignore+=tmp/** " Ignore stuff that can't be opened
 set wildmenu " Enables a menu at the bottom of the vim window.
 set wildmode=list:longest,list:full
 
-nnoremap <C-b> :wa<CR>:Buffers<CR>
+nnoremap <Leader>b :wa<CR>:Buffers<CR>
+nnoremap <Leader>h :Histor<CR>
 
 " line numbers
 set number relativenumber
@@ -81,3 +82,7 @@ let g:ale_lint_on_enter = 0
 
 " Source vimrc
 command! ReloadVimrc source $MYVIMRC
+
+" update jest snapshots
+let g:test#runner_commands = ['Jest']
+nnoremap <Leader>u :Jest <C-r>=escape(expand("%"), ' ') . ' ' . '--updateSnapshot'<CR><CR>
