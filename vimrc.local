@@ -47,9 +47,6 @@ set wildignore+=tmp/** " Ignore stuff that can't be opened
 set wildmenu " Enables a menu at the bottom of the vim window.
 set wildmode=list:longest,list:full
 
-nnoremap <Leader>b :wa<CR>:Buffers<CR>
-nnoremap <Leader>h :Histor<CR>
-
 " line numbers
 set number relativenumber
 set numberwidth=5
@@ -79,6 +76,13 @@ let g:ale_echo_msg_warning_str = 'Warning'
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+
+" shortcuts
+map <Leader>h :nohl<cr>
+map <C-t> <esc>:tabe<CR>
+map <C-c> <esc>:tabc<CR>
+map <C-h> :Histor<CR>
+nnoremap <Leader>b :wa<CR>:Buffers<CR>
 
 " Source vimrc
 command! ReloadVimrc source $MYVIMRC
