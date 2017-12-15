@@ -48,7 +48,7 @@ set wildmenu " Enables a menu at the bottom of the vim window.
 set wildmode=list:longest,list:full
 
 " line numbers
-" set number relativenumber
+set number relativenumber
 set numberwidth=5
 
 " html autocomplete plugin
