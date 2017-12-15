@@ -85,7 +85,7 @@ nnoremap <Leader>h :History<CR>
 nnoremap <Leader>b :wa<CR>:Buffers<CR>
 
 " Source vimrc
-command! ReloadVimrc source $MYVIMRC
+command! Reload source $MYVIMRC
 
 " update jest snapshots
 let g:test#runner_commands = ['Jest']
